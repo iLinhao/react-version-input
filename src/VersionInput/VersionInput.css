@@ -1,0 +1,20 @@
+
+.version-input {
+    width: 100px;
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.version-input-content {
+    width: 33%;
+    display: flex;
+}
+
+.version-input-inner {
+    border: none;
+    text-align: center;
+    width: 100%;
+    outline: none;
+}
