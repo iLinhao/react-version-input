@@ -17,6 +17,7 @@ npm test
 
 ## Notic
 1、`value`默认为英文句号分割的字符串, eg. `1.0.1`;
+
 2、配合 Ant Design Form表单使用时，可自定义验证逻辑，例如：
 
 ```
