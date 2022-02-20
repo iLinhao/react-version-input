@@ -38,11 +38,7 @@ export const VersionInput: FC<Props> = (props): JSX.Element => {
         const input = child['children'][0];
         result.push(input.value);
       })
-      if (result.length === 3) {
-        onChange(result.join('.'));
-      } else {
-        onChange('');
-      }
+      onChange(result.join('.'));
     }
   }, [])
 
@@ -50,6 +46,8 @@ export const VersionInput: FC<Props> = (props): JSX.Element => {
     if (value && value.indexOf('.')) {
       const values = value.split('.');
       setInputValues(values);
+    } else {
+      setInputValues(['','','']);
     }
   }, [value])
 
